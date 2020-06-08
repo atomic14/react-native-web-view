@@ -2,7 +2,7 @@
 
 This project demonstrates how to export a native Swift view to React Native.
 
-[![Demo Video](https://img.youtube.com/vi/_bMsrxiyuHs/0.jpg)](https://www.youtube.com/watch?v=_bMsrxiyuHs)
+[![Demo Video](https://img.youtube.com/vi/1KztsEdrhr8/0.jpg)](https://www.youtube.com/watch?v=1KztsEdrhr8)
 
 # Setup
 
