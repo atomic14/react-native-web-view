@@ -19,5 +19,5 @@ You will need to install the project dependencies:
 git clone git@github.com:atomic14/react-native-web-view.git
 cd react-native-web-view
 npm install
-npx react-native run ios
+npx react-native run-ios
 ```
