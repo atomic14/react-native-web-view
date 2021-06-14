@@ -13,7 +13,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={{flex: 1}}>
         <WebView
-          uri="https://news.ycombinator.com"
+          uri="https://www.apple.com/contact/"
           style={{flex: 1}}
           onLoaded={pageLoaded}
         />

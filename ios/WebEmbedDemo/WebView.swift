@@ -10,12 +10,17 @@ import WebKit
 
 @objcMembers
 class WebView: UIView, WKNavigationDelegate {
-  let webView = WKWebView()
+  var webView : WKWebView
   
   var onLoaded : RCTDirectEventBlock?
   
   init() {
+    let webConfiguration = WKWebViewConfiguration()
+    webConfiguration.dataDetectorTypes = [.all]
+    webView = WKWebView(frame: .zero, configuration: webConfiguration)
+
     super.init(frame: CGRect.zero)
+
     webView.translatesAutoresizingMaskIntoConstraints = false;
     addSubview(webView)
     addConstraint(NSLayoutConstraint(item: webView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 0.0))
@@ -36,6 +41,9 @@ class WebView: UIView, WKNavigationDelegate {
   }
   
   required init?(coder: NSCoder) {
+    let webConfiguration = WKWebViewConfiguration()
+    webConfiguration.dataDetectorTypes = [.all]
+    webView = WKWebView(frame: .zero, configuration: webConfiguration)
     super.init(coder: coder)
   }
   
